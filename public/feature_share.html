@@ -1,0 +1,133 @@
+<div
+    class="w3-container w3-center"
+    style="padding:128px 16px"
+    id="feature_share">
+    
+    <h1 class="w3-xxxlarge">
+        <strong>SHARE</strong>
+    </h1>
+    
+    <p>
+        Ut placerat eros mauris, nec eleifend ex commodo et. Phasellus in dapibus massa,
+        quis rhoncus.
+    </p>
+    
+    <hr>
+    <br><br><br>
+
+    <div class="w3-row-padding">
+        
+        <div class="w3-third w3-padding">
+            <br><br><br><br>
+            <div class="w3-container w3-cell-row">
+                <div class="w3-container w3-cell w3-right-align">
+                    <br><br>
+                    <h3 class="w3-xxlarge">headline</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore.</p>
+                </div>
+                <div class="w3-container w3-cell w3-cell-middle w3-right-align"><img src="../statics/leftup_arrow.svg"/></div>
+            </div>
+
+            <br><br><br><br>
+            <div class="w3-container w3-left-align"><img src="../statics/cook.svg" style="width:80%"/></div>
+        </div>
+
+        <div class="w3-third"><img src="../statics/share_together.svg" style="width:60%"/></div>
+
+        <div class="w3-third w3-padding">
+
+            <div class="w3-container w3-cell-row">
+                <div class="w3-container w3-cell w3-cell-bottom"><img src="../statics/rightup_arrow.svg"/></div>
+
+                <div class="w3-container w3-cell w3-left-align">
+                    <br><br><br><br>
+                    <h3 class="w3-xxlarge">headline</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore.</p>
+                </div>
+            </div>
+
+            <br><br><br><br><br><br><br>
+            <div class="w3-container w3-cell-row">
+                <div class="w3-container w3-cell w3-cell-middle"><img src="../statics/rightdown_arrow.svg"/></div>
+
+                 <div class="w3-container w3-cell w3-left-align">
+                    <br>
+                    <h3 class="w3-xxlarge">headline</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Design Version 2-->
+<div class="w3-row w3-center" style="padding:128px 16px">
+
+            <div class="w3-quarter w3-right-align w3-padding">
+                <h1 class="w3-xxlarge">HEADLINE</h1>
+                <p>
+                    Ut placerat eros mauris, nec eleifend ex commodo et. Phasellus in dapibus massa,
+                    quis rhoncus.
+                </p>
+            </div>
+
+            <div class="w3-quarter">
+                <img class="myScreens" src="../statics/select_retailer.svg" style="width:80%;display:none"/>
+                <img class="myScreens" src="../statics/schedule_event.svg" style="width:80%"/>
+                <img class="myScreens" src="../statics/share_together.svg" style="width:80%;display:none"/>
+            </div>
+
+            <div class="w3-half w3-right-align">
+            <br><br><br>
+                <div class="w3-row-padding" style="width:80%">
+                    <div class="demo w3-third w3-left-align w3-padding w3-opacity w3-hover-opacity-off"
+                        onclick="currentDiv(1)" style="cursor:pointer">
+                        <img src="../statics/online_ordering.svg" style="width:60%"/>
+                        <h3 class="w3-xlarge">SECOND HEADLINE</h3>
+                        <p class="w3-small w3-text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin, urna
+                        eget eleifend iaculis.</p>
+                    </div>
+
+                    <div class="demo w3-third w3-left-align w3-padding w3-opacity w3-hover-opacity-off"
+                        onclick="currentDiv(2)" style="cursor:pointer">
+                        <img src="../statics/online_ordering.svg" style="width:60%"/>
+                        <h3 class="w3-xlarge">SECOND HEADLINE</h3>
+                        <p class="w3-small w3-text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin, urna
+                        eget eleifend iaculis.</p>
+                    </div>
+
+                    <div class="demo w3-third w3-left-align w3-padding w3-opacity w3-hover-opacity-off"
+                        onclick="currentDiv(3)" style="cursor:pointer">
+                        <img src="../statics/online_ordering.svg" style="width:60%"/>
+                        <h3 class="w3-xlarge">SECOND HEADLINE</h3>
+                        <p class="w3-small w3-text-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sollicitudin, urna
+                        eget eleifend iaculis.</p>
+                    </div>
+                </div>
+        </div>
+
+<script>
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("myScreens");
+        var dots = document.getElementsByClassName("demo");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-opacity-off", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-opacity-off";
+    }
+</script>
+<!--End of Design version 2-->

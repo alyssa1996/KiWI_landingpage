@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KiWI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="./style.css">
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css?family=Inconsolata">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+
+                $("#feature_shop").load("/public/feature_shop.html");
+                $("#value").load("/public/value.html");
+                $("#feature_share").load("/public/feature_share.html");
+                $("#contact").load("/public/contact.html");
+                $("#menu").load("/public/menu.html");
+                $("#social_proof").load("/public/social_proof.html");
+                $("#hero_page").load("/public/hero_page.html");
+                $("#feature_stock").load("/public/feature_stock.html");
+            });
+        </script>
+
+    </head>
+
+    <body>
+        <div id="menu"></div>
+
+        <!--First Section-->
+        <div id="hero_page"></div>
+        <!--End of First Section-->
+
+        <!--Social Proof-->
+        <div id="social_proof"></div>
+        <!--End of Social Proof-->
+
+        <!-- Value Section -->
+        <div id="value"></div>
+        <!--End of Value Section-->
+
+        <!--Feature shop Section-->
+        <div id="feature_shop"></div>
+        <!--End of Feature shop Section-->
+
+        <!--Feature stock section-->
+        <div id="feature_stock"></div>
+        <!--End of Feature stock Section-->
+
+        <!--Feature Share Section-->
+        <div id="feature_share"></div>
+        <!--End of Feature Share Section -->
+
+        <!-- Contact Section -->
+        <div id="contact"></div>
+        <!--End of Contact Section-->
+
+        <!--Modal-->
+        <div id="modal" class="w3-modal">
+            <div class="w3-modal-content w3-animate-opacity" style="height:auto">
+                <header class="w3-container w3-center">
+                    <span
+                        onclick="document.getElementById('modal').style.display='none'"
+                        class="w3-button w3-display-topright w3-hover-text-red w3-hover-white w3-large">&times;</span>
+                    <h1>Get in touch</h1>
+                </header>
+                <div class="w3-container w3-center w3-margin">
+                    <h6>Ut placerat eros mauris, nec eleifend ex commodo et. Phasellus in dapibus
+                        massa, quis rhoncus.</h6>
+                    <img src="../statics/get_in_touch.svg" style="width:30%">
+                    <form action="/action_page.php" method="P0ST">
+                        <input type="text" name="email" id="email" required="required">
+                        <input type="submit" value="Get newsletter">
+                    </form>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <!--End of Modal-->
+
+    </body>
+</html>

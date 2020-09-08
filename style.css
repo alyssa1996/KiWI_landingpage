@@ -1,0 +1,46 @@
+body,h1,h2,h3 {
+    font-family: "Roboto";
+    color: black;
+    font-weight: 900;
+}
+
+h4,h5 {
+    font-family: "Roboto";
+    color: black;
+    font-weight: 500;
+}
+
+h6,p {
+    font-family: "Inconsolata";
+    font-weight: normal;
+}
+
+hr {
+    border: 1px solid;
+    width: 20%;
+    margin: auto;
+}
+
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+
+.w3-bar .w3-button {
+    padding: 16px;
+}
+
+.mySlides {
+    display: none;
+}
+.myScreens {
+    margin: 0 auto;
+}
+.w3-badge, .w3-left, .w3-right {
+    cursor: pointer;
+}
+.w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0;
+}
