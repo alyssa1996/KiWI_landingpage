@@ -18,15 +18,16 @@
         <script type="text/javascript">
             $(document).ready(function () {
 
-                $("#feature_shop").load("/public/feature_shop.html");
-                $("#value").load("/public/value.html");
-                $("#feature_share").load("/public/feature_share.html");
-                $("#contact").load("/public/contact.html");
                 $("#menu").load("/public/menu.html");
-                $("#social_proof").load("/public/social_proof.html");
                 $("#hero_page").load("/public/hero_page.html");
+                $("#social_proof").load("/public/social_proof.html");
+                $("#value").load("/public/value.html");
+                $("#feature_shop").load("/public/feature_shop.html");
+                $("#mobile_shop").load("/public/mobile_shop.html");
                 $("#feature_stock").load("/public/feature_stock.html");
+                $("#feature_share").load("/public/feature_share.html");
                 $("#mobile_share").load("/public/mobile_share.html");
+                $("#contact").load("/public/contact.html");
             });
         </script>
 
@@ -48,7 +49,8 @@
         <!--End of Value Section-->
 
         <!--Feature shop Section-->
-        <div id="feature_shop"></div>
+        <div id="feature_shop" class="w3-hide-small"></div>
+        <div id="mobile_shop" class="w3-hide-medium w3-hide-large"></div>
         <!--End of Feature shop Section-->
 
         <!--Feature stock section-->
@@ -57,11 +59,8 @@
 
         <!--Feature Share Section-->
         <div id="feature_share" class="w3-hide-small"></div>
-        <!--End of Feature Share Section -->
-
-         <!--Mobile Feature Share Section-->
         <div id="mobile_share" class="w3-hide-medium w3-hide-large"></div>
-        <!--End of Mobile Feature Share Section -->
+        <!--End of Feature Share Section -->
 
         <!-- Contact Section -->
         <div id="contact"></div>
