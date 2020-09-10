@@ -30,7 +30,7 @@ body, html {
     padding: 16px;
 }
 
-.mySlides {
+.mySlides, .myMobileSlides {
     display: none;
 }
 .myScreens {
