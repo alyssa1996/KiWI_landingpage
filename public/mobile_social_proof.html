@@ -13,7 +13,7 @@
             id="mobile_social_proof">
 
             <div class="w3-content w3-display-container" style="padding:32px">
-                <div class="myMobileSlides w3-row">
+                <div class="myMobileSlides">
                         <h6>
                             <i class="fa fa-quote-left w3-large"></i>
                             <br>Ut placerat eros mauris, nec eleifend ex commodo et. Phasellus in dapibus
@@ -26,7 +26,7 @@
                         </div>
                 </div>
 
-                <div class="myMobileSlides w3-row">
+                <div class="myMobileSlides">
                         <h6>
                             <i class="fa fa-quote-left w3-large"></i>
                             <br>Ut placerat eros mauris, nec eleifend ex commodo et. Phasellus in dapibus
@@ -40,7 +40,7 @@
                         </div>
                 </div>
 
-                <div class="myMobileSlides w3-row">
+                <div class="myMobileSlides">
                     <h6>
                         <i class="fa fa-quote-left w3-large"></i>
                         <br>Ut placerat eros mauris, nec eleifend ex commodo et. Phasellus in dapibus
@@ -59,13 +59,13 @@
                     <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
                     <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
                     <span
-                        class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                        class="w3-badge dot w3-border w3-transparent w3-hover-white"
                         onclick="currentDiv(1)"></span>
                     <span
-                        class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                        class="w3-badge dot w3-border w3-transparent w3-hover-white"
                         onclick="currentDiv(2)"></span>
                     <span
-                        class="w3-badge demo w3-border w3-transparent w3-hover-white"
+                        class="w3-badge dot w3-border w3-transparent w3-hover-white"
                         onclick="currentDiv(3)"></span>
                 </div>
             </div>
@@ -85,7 +85,7 @@
                 function showDivs(n) {
                     var i;
                     var x = document.getElementsByClassName("myMobileSlides");
-                    var dots = document.getElementsByClassName("demo");
+                    var dots = document.getElementsByClassName("dot");
                     if (n > x.length) {
                         slideIndex = 1
                     }
