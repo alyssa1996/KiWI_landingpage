@@ -7,5 +7,5 @@ It is landingpage for KiWI project. (KiWI: Kitchen Warehouse Inventory) It is no
 3. Open 'http://localhost:8080/' on your browser.
 4. Click 'public/' then click 'init.html'.
 
-##### Reference
-[W3.CSS Templates](https://www.w3schools.com/w3css/w3css_templates.asp)
+#### Reference
+* [W3.CSS Templates](https://www.w3schools.com/w3css/w3css_templates.asp)
