@@ -6,6 +6,5 @@ It is landingpage for KiWI project. (KiWI: Kitchen Warehouse Inventory) It is no
 2. Run app.py
 3. Open 'http://localhost:8080/public/init.html' on your browser.
 
-<br>
 #### Reference
 * [W3.CSS Templates](https://www.w3schools.com/w3css/w3css_templates.asp)
