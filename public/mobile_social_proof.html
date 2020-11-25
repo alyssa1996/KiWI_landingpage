@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+    </head>
+
+    <body>
+
+        <!--Social Proof-->
+        <div
+            class="w3-container w3-light-gray w3-center"
+            style="padding:64px 8px; height:auto;"
+            id="mobile_social_proof">
+
+            <div class="w3-content w3-display-container" style="padding:32px">
+                <div class="myMobileSlides">
+                        <h6>
+                            <i class="fa fa-quote-left w3-large"></i>
+                            <br>Ut placerat eros mauris, nec eleifend ex commodo et. Phasellus in dapibus
+                                massa, quis rhoncus.<br>
+                            <i class="fa fa-quote-right w3-large"></i>
+                        </h6>
+                        <div class="w3-row w3-center">
+                            <div class="w3-third w3-container"><img src="../statics/user_computer.svg" style="width:30%"/></div>
+                            <div class="w3-twothird w3-container"><p><em>Coliving space community manager</em></p></div>
+                        </div>
+                </div>
+
+                <div class="myMobileSlides">
+                        <h6>
+                            <i class="fa fa-quote-left w3-large"></i>
+                            <br>Ut placerat eros mauris, nec eleifend ex commodo et. Phasellus in dapibus
+                                massa, quis rhoncus.Ut placerat eros mauris, nec eleifend ex commodo et. Phasellus in dapibus
+                                massa, quis rhoncus.<br>
+                            <i class="fa fa-quote-right w3-large"></i>
+                        </h6>
+                        <div class="w3-row w3-center">
+                            <div class="w3-third w3-container"><img src="../statics/user_standing.svg" style="width:30%"/></div>
+                            <div class="w3-twothird w3-container"><p><em>Coliving space owner</em></p></div>
+                        </div>
+                </div>
+
+                <div class="myMobileSlides">
+                    <h6>
+                        <i class="fa fa-quote-left w3-large"></i>
+                        <br>Ut placerat eros mauris, nec eleifend ex commodo et. Phasellus in dapibus
+                                massa, quis rhoncus.Ut placerat eros mauris, nec eleifend ex commodo et.<br>
+                        <i class="fa fa-quote-right w3-large"></i>
+                    </h6>
+                    <div class="w3-row w3-center">
+                        <div class="w3-third w3-container"><img src="../statics/user_message.svg" style="width:30%"/></div>
+                        <div class="w3-twothird w3-container"><p><em>Coliver</em></p></div>
+                    </div>
+                </div>
+
+                <div
+                    class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle"
+                    style="width:100%">
+                    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                    <span
+                        class="w3-badge dot w3-border w3-transparent w3-hover-white"
+                        onclick="currentDiv(1)"></span>
+                    <span
+                        class="w3-badge dot w3-border w3-transparent w3-hover-white"
+                        onclick="currentDiv(2)"></span>
+                    <span
+                        class="w3-badge dot w3-border w3-transparent w3-hover-white"
+                        onclick="currentDiv(3)"></span>
+                </div>
+            </div>
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+
+                function plusDivs(n) {
+                    showDivs(slideIndex += n);
+                }
+
+                function currentDiv(n) {
+                    showDivs(slideIndex = n);
+                }
+
+                function showDivs(n) {
+                    var i;
+                    var x = document.getElementsByClassName("myMobileSlides");
+                    var dots = document.getElementsByClassName("dot");
+                    if (n > x.length) {
+                        slideIndex = 1
+                    }
+                    if (n < 1) {
+                        slideIndex = x.length
+                    }
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    for (i = 0; i < dots.length; i++) {
+                        dots[i].className = dots[i]
+                            .className
+                            .replace(" w3-white", "");
+                    }
+                    x[slideIndex - 1].style.display = "block";
+                    dots[slideIndex - 1].className += " w3-white";
+                }
+            </script>
+
+        </div>
+    </body>
+</html>

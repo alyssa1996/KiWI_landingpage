@@ -1,13 +1,12 @@
 body,h1,h2,h3 {
-    font-family: "Roboto";
+    font-family: "Trebuchet MS", Sans-serif;
     color: black;
-    font-weight: 900;
+    margin:0;
 }
 
 h4,h5 {
-    font-family: "Roboto";
+    font-family: "Trebuchet MS",Sans-serif;
     color: black;
-    font-weight: 500;
 }
 
 h6,p {
@@ -26,11 +25,16 @@ body, html {
     line-height: 1.8;
 }
 
+.hero-text{
+    padding-top: 128px;
+    padding-left: 32px;
+}
+
 .w3-bar .w3-button {
     padding: 16px;
 }
 
-.mySlides {
+.mySlides, .myMobileSlides {
     display: none;
 }
 .myScreens {
