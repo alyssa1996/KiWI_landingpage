@@ -24,6 +24,18 @@ body, html {
     height: 100%;
     line-height: 1.8;
 }
+.valueContainer{
+    display:flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.valueItem{
+    flex:1;
+    margin:64px;
+}
 
 .headline{
     font-weight: bold;
