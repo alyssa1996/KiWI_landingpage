@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+    </head>
+
+    <body>
+        <!-- Navbar (sit on top) -->
+        <div class="w3-top">
+            <div class="w3-bar w3-white w3-card" id="myNavbar">
+                <a
+                    href="#home"
+                    class="w3-bar-item w3-button w3-wide w3-hover-white w3-hover-text-gray">KiWI</a>
+                <!-- Right-sided navbar links -->
+                <div class="w3-right w3-hide-small">
+                    <a
+                        href="#value"
+                        class="w3-bar-item w3-button w3-hover-white w3-hover-text-gray">VALUE</a>
+                    <a
+                        href="#feature_shop"
+                        class="w3-bar-item w3-button w3-hover-white w3-hover-text-gray">
+                        <!--<i class="fa fa-shopping-basket"></i>-->
+                        SHOP</a>
+                    <a
+                        href="#feature_stock"
+                        class="w3-bar-item w3-button w3-hover-white w3-hover-text-gray">
+                        <!--<i class="fa fa-get-pocket"></i>-->
+                        STOCK</a>
+                    <a
+                        href="#feature_share"
+                        class="w3-bar-item w3-button w3-hover-white w3-hover-text-gray">
+                        <!--<i class="fa fa-share"></i>-->
+                        SHARE</a>
+                    <a
+                        href="#contact_partner"
+                        class="w3-bar-item w3-button w3-hover-white w3-hover-text-gray">
+                        <!--<i class="fa fa-envelope"></i>-->
+                        CONTACT</a>
+                    <button
+                        onclick="document.getElementById('modal').style.display='block'"
+                        class="w3-bar-item w3-button w3-hover-black">
+                        <i class="fa fa-download"></i>
+                        <b>Download the App</b>
+                    </a>
+                </div>
+                <!-- Hide right-floated links on small screens and replace them with a menu
+                icon-->
+
+                <a
+                    href="javascript:void(0)"
+                    class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium"
+                    onclick="w3_open()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Sidebar on small screens when clicking the menu icon -->
+        <nav
+            class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large"
+            style="display:none"
+            id="mySidebar">
+            <a
+                href="javascript:void(0)"
+                onclick="w3_close()"
+                class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+            <a href="#value" onclick="w3_close()" class="w3-bar-item w3-button">VALUE</a>
+            <a href="#mobile_shop" onclick="w3_close()" class="w3-bar-item w3-button">SHOP</a>
+            <a href="#mobile_stock" onclick="w3_close()" class="w3-bar-item w3-button">STOCK</a>
+            <a href="#mobile_share" onclick="w3_close()" class="w3-bar-item w3-button">SHARE</a>
+            <a href="#mobile_contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+            <a
+                href="#"
+                onclick="document.getElementById('modal').style.display='block'"
+                class="w3-bar-item w3-button w3-hover-white">
+                <b>Download the APP</b>
+            </a>
+        </nav>
+
+        <script>
+            // Toggle between showing and hiding the sidebar when clicking the menu icon
+            var mySidebar = document.getElementById("mySidebar");
+
+            function w3_open() {
+                if (mySidebar.style.display === 'block') {
+                    mySidebar.style.display = 'none';
+                } else {
+                    mySidebar.style.display = 'block';
+                }
+            }
+
+            // Close the sidebar with the close button
+            function w3_close() {
+                mySidebar.style.display = "none";
+            }
+        </script>
+    </body>
+</html>
